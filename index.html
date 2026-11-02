@@ -5,292 +5,582 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Naufal Ramadhan - Porto</title>
+        <title>Naufal Ramadhan Wahyudiansyah - Fullstack & Mobile Developer</title>
         <link rel="stylesheet" href="assets/css/tailwind.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <style>
+            body {
+                font-family: 'Poppins', sans-serif;
+            }
+        </style>
     </head>
 
-    <body class="bg-gray-100">
+    <body class="bg-gray-100 text-gray-800 antialiased selection:bg-gray-800 selection:text-white">
         
-        <section class="py-10 md:py-16">
+        <!-- HEADER / NAVIGATION -->
+        <header class="py-6 md:py-10">
+            <div class="container max-w-screen-xl mx-auto px-4 sm:px-6">
+                <nav class="flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                        <img src="assets/image/navbar-logo.png" alt="Logo" class="w-8 h-8 md:w-10 md:h-10 object-contain">
+                        <span class="font-bold text-gray-800 text-lg md:text-xl tracking-tight">Naufal<span class="text-gray-500">.dev</span></span>
+                    </div>
 
-            <div class="container max-w-screen-xl mx-auto px-4">
-
-                <nav class="flex items-center justify-between mb-40">
-                    <img src="assets/image/navbar-logo.png" alt="Logo">
-
-                    <button class="px-7 py-3 md:px-9 md:py-4 bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500">Get my CV</button>
+                    <div class="flex items-center space-x-3">
+                        <a href="assets/CV_Naufal_Ramadhan.pdf" download="CV_Naufal_Ramadhan.pdf" target="_blank" class="px-5 py-2.5 md:px-7 md:py-3 bg-white font-medium text-gray-700 text-sm md:text-base rounded-md hover:bg-gray-800 hover:text-white transition ease-in-out duration-300 shadow-sm flex items-center space-x-2 border border-gray-200">
+                            <i data-feather="download" class="w-4 h-4"></i>
+                            <span>Get my CV</span>
+                        </a>
+                    </div>
                 </nav>
+            </div>
+        </header>
 
+        <!-- HERO SECTION -->
+        <section class="py-12 md:py-20">
+            <div class="container max-w-screen-xl mx-auto px-4 sm:px-6">
                 <div class="text-center">
-                    <div class="flex justify-center mb-16">
-                        <img src="assets/image/-img.png" alt="Image">
-                    </div>
-
-                    <h6 class="font-medium text-gray-600 text-lg md:text-2xl uppercase mb-8">Naufal Ramadhan</h6>
-
-                    <h1 class="font-normal text-gray-900 text-4xl md:text-7xl leading-none mb-8">Fullstack Developer</h1>
-
-                    <p class="font-normal text-gray-600 text-md md:text-xl mb-16">I have a passion for software. I enjoy to learn more about technology.</p>
-
-                    <a href="#" class="px-7 py-3 md:px-9 md:py-4 font-medium md:font-semibold bg-gray-700 text-gray-50 text-sm rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500">Hire me</a>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="py-10 md:py-16">
-
-            <div class="container max-w-screen-xl mx-auto px-4">
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="bg-gray-50 px-8 py-10 rounded-md">
-                        <div class="w-20 py-6 flex justify-center bg-gray-100 rounded-md mb-4">
-                            <i data-feather="activity"></i>
-                        </div>
-
-                        <h4 class="font-medium text-gray-700 text-lg mb-4">High experience</h4>
-
-                        <p class="font-normal text-gray-500 text-md">With years of experience across various technology projects, I am ready to deliver the best solutions tailored to your needs. Deep expertise and innovation are at the core of every project I undertake.</p>
-                    </div>
-                    
-                    <div class="bg-gray-50 px-8 py-10 rounded-md">
-                        <div class="w-20 py-6 flex justify-center bg-gray-100 rounded-md mb-4">
-                            <i data-feather="codesandbox"></i>
-                        </div>
-
-                        <h4 class="font-medium text-gray-700 text-lg mb-4">Useful sandboxes</h4>
-
-                        <p class="font-normal text-gray-500 text-md">I provide a safe and flexible development environment, allowing for experimentation and technological innovation without risk. Gain hands-on experience with real-time solutions for your projects.</p>
-                    </div>
-                    
-                    <div class="bg-gray-50 px-8 py-10 rounded-md">
-                        <div class="w-20 py-6 flex justify-center bg-gray-100 rounded-md mb-4">
-                            <i data-feather="coffee"></i>
-                        </div>
-
-                        <h4 class="font-medium text-gray-700 text-lg mb-4">Growing Expertise</h4>
-
-                        <p class="font-normal text-gray-500 text-md">With practical experience from vocational high school, a 9-month internship, and hands-on freelance work, I’ve built a solid foundation in coding. I've also helped peers with their coding assignments, further honing my problem-solving skills in real-world scenarios.</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="py-10 md:py-16">
-
-            <div class="container max-w-screen-xl mx-auto px-4">
-
-                <div class="flex flex-col lg:flex-row justify-between">
-                    <div class="mb-10 lg:mb-0">
-                        <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">Portfolio</h1>
-
-                        <p class="font-normal text-gray-500 text-xs md:text-base">I have brought here my biggest and favorite works <br> as a professional.</p>
-                    </div>
-
-                    <div class="space-y-24">
-                        <div class="flex space-x-6">
-                            <h1 class="font-normal text-gray-700 text-3xl md:text-4xl">01</h1>
-
-                            <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
-
-                            <div>
-                                <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Audithink</h1>
-
-                                <p class="font-normal text-gray-500 text-sm md:text-base">An innovative auditing application that Improve collaboration, <br>audit process efficiency,  and real-time monitoring to support <br>corporate governance in one application.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex space-x-6">
-                            <h1 class="font-normal text-gray-700 text-3xl md:text-4xl">02</h1>
-
-                            <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
-
-                            <div>
-                                <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">KIOSK - Smelting</h1>
-
-                                <p class="font-normal text-gray-500 text-sm md:text-base">An innovative self-service kiosk solution that enhances customer<br> convenience, streamlines transaction processes, and supports <br>real-time interactions, all within a user-friendly interface. Perfect <br>for businesses looking to improve efficiency and customer <br>satisfaction in one integrated system.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex space-x-6">
-                            <h1 class="font-normal text-gray-700 text-3xl md:text-4xl">03</h1>
-
-                            <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
-
-                            <div>
-                                <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Freelance Coding Support</h1>
-
-                                <p class="font-normal text-gray-500 text-sm md:text-base">A versatile freelance coding support solution that enhances task efficiency ,<br> ensures timely completion of assignments, and delivers high-quality,<br>  reliable code across various projects. Perfect for clients seeking <br> expert coding assistance to meet deadlines <br> and achieve their technical goals.</p>
-                            </div>
-                        </div>
-
-                        <div class="flex space-x-6">
-                            <h1 class="font-normal text-gray-700 text-3xl md:text-4xl">04</h1>
-
-                            <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
-
-                            <div>
-                                <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Metaverse SMKN 1 Boyolangu</h1>
-
-                                <p class="font-normal text-gray-500 text-sm md:text-base">a member of the SEAMEO Metaverse training program, where I <br>have been actively learning about the latest trends and technologies<br> in virtual reality (VR), augmented reality (AR),<br> and the development of immersive digital environments. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="py-10 md:py-16">
-
-            <div class="container max-w-screen-xl mx-auto px-4">
-
-                <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">Education</h1>
-
-                <p class="font-normal text-gray-500 text-xs md:text-base mb-20">Below is a summary of the places I studied</p>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="bg-gray-50 px-8 py-10 rounded-md">
-                        <h4 class="font-medium text-gray-700 text-lg mb-4">2021 – 2024</h4>
-
-                        <p class="font-normal text-gray-500 text-md mb-4">I completed my studies at SMK Negeri 1 Boyolangu, specializing in Software Engineering (RPL). During my time there, I gained a solid foundation in programming, software development, and IT infrastructure. This education helped me develop key skills in coding, problem-solving, and teamwork, which I later applied in my internship and freelance projects.</p>
-
-                        <div class="relative">
-                            <a href="http://www.smknegeri1boyolangu.ac.id/" target="_blank" class="font-semibold text-gray-500 text-md relative z-10">See the place here</a>
-                            <span class="w-32 h-1 bg-blue-200 absolute bottom-1 left-0 z-0"></span>
+                    <div class="flex justify-center mb-8">
+                        <div class="w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden shadow-md border-4 border-white bg-gray-200 flex items-center justify-center">
+                            <img src="assets/image/home-img.png" alt="Naufal Ramadhan Wahyudiansyah" class="w-full h-full object-cover">
                         </div>
                     </div>
 
-                    <div class="bg-gray-50 px-8 py-10 rounded-md">
-                        <h4 class="font-medium text-gray-700 text-lg mb-4">2024 – Now</h4>
-
-                        <p class="font-normal text-gray-500 text-md mb-4">I am currently pursuing my studies in Information Engineering (Teknik Informatika) at Politeknik Negeri Malang (Polinema). My education focuses on developing expertise in software development, system design, and information technology, providing me with a strong foundation in both theoretical knowledge and practical skills to tackle challenges in the ever-evolving tech industry.</p>
-
-                        <div class="relative">
-                            <a href="https://www.polinema.ac.id/" target="_blank" class="font-semibold text-gray-500 text-md relative z-10">See the place here</a>
-                            <span class="w-32 h-1 bg-blue-200 absolute bottom-1 left-0 z-0"></span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="py-10 md:py-16">
-
-            <div class="container max-w-screen-xl mx-auto px-4">
-
-                <div class="text-center">
-                    <p class="font-medium text-gray-700 text-xs md:text-base">I am proficient in various web development frameworks and tools, including CodeIgniter (CI), Laravel, Bootstrap,<br> and Tailwind for creating responsive and dynamic web applications. I have hands-on experience with React for building interactive user interfaces<br> and also use Figma for designing intuitive and user-friendly UI/UX. These skills enable me to develop both the front-end and back-end of applications,<br> ensuring smooth and efficient workflows across all stages of development.</p>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="py-10 md:py-16">
-
-            <div class="container max-w-screen-xl mx-auto px-4">
-
-                <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">Experience</h1>
-
-                <p class="font-normal text-gray-500 text-xs md:text-base mb-20">My Experience</p>
-
-                <div class="flex flex-col lg:flex-row justify-between">
-                    <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
-                        <h6 class="font-medium text-gray-400 text-base uppercase">Company</h6>
-
-                        <p class="font-semibold text-gray-600 text-base">Sekawan Media <span class="font-normal text-gray-300">/ Malang, Indonesia</span></p>
-
-                        <p class="font-semibold text-gray-600 text-base">Smelting <span class="font-normal text-gray-300">/ Gresik, Indonesia</span></p>
-
-                        <p class="font-semibold text-gray-600 text-base">Self-Employed (Freelance) <span class="font-normal text-gray-300">/ Malang, Indonesia</span></p>
-
+                    <div class="inline-flex items-center space-x-2 bg-gray-200 text-gray-700 text-xs md:text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
+                        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                        <span>Open to Opportunities & Projects</span>
                     </div>
 
-                    <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
-                        <h6 class="font-medium text-gray-400 text-base uppercase">Position</h6>
+                    <h6 class="font-medium text-gray-500 text-base md:text-xl uppercase tracking-widest mb-3">Naufal Ramadhan Wahyudiansyah</h6>
 
-                        <p class="font-normal text-gray-400 text-base">Intern Fullstack Developer</p>
-
-                        <p class="font-normal text-gray-400 text-base">Android Developer</p>
-
-                        <p class="font-normal text-gray-400 text-base">Fullstack Developer</p>
-
-                    </div>
-
-                    <div class="space-y-8 md:space-y-16">
-                        <h6 class="font-medium text-gray-400 text-base uppercase">Year</h6>
-
-                        <p class="font-normal text-gray-400 text-base">2023</p>
-
-                        <p class="font-normal text-gray-400 text-base">2024</p>
-
-                        <p class="font-normal text-gray-400 text-base">2021</p>
-
-                    </div>
-                </div>
-                
-            </div>
-
-        </section>
-
-
-
-        <footer class="py-10 md:py-16 mb-20 md:mb-40 lg::mb-52">
-
-            <div class="container max-w-screen-xl mx-auto px-4">
-
-                <div class="text-center">
-                    <h1 class="font-medium text-gray-700 text-4xl md:text-5xl mb-5">Open to Opportunities
+                    <h1 class="font-bold text-gray-900 text-3xl sm:text-5xl md:text-6xl leading-tight mb-6">
+                        Fullstack & Mobile Developer
                     </h1>
 
-                    <p class="font-normal text-gray-400 text-md md:text-lg mb-20">I am currently open to new opportunities and projects. Feel free to reach out if you are looking for a dedicated developer or if you have any inquiries. <br>I am eager to collaborate and contribute to exciting new ventures!</p>
+                    <p class="font-normal text-gray-600 text-base md:text-lg max-w-3xl mx-auto mb-10 leading-relaxed">
+                        Undergraduate Information Technology student at <strong class="text-gray-800 font-semibold">Politeknik Negeri Malang</strong> (GPA 3.67). Experienced in architecting robust web & mobile applications (Laravel, Next.js, Flutter), managing technology projects, and leading development teams.
+                    </p>
 
-                    <div class="flex items-center justify-center space-x-8">
-                        <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-                            <i data-feather="twitter" class="text-gray-500 hover:text-gray-800 transition ease-in-out duration-500"></i>
+                    <div class="flex flex-wrap justify-center items-center gap-4">
+                        <a href="mailto:naufalwahyudiansyah7@gmail.com" class="px-7 py-3 md:px-9 md:py-4 font-medium md:font-semibold bg-gray-800 text-gray-50 text-sm md:text-base rounded-md hover:bg-gray-700 transition ease-in-out duration-300 shadow flex items-center space-x-2">
+                            <i data-feather="mail" class="w-4 h-4"></i>
+                            <span>Hire Me</span>
                         </a>
-    
-                        <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-                            <i data-feather="dribbble" class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
+
+                        <a href="https://wa.me/6281915862210" target="_blank" rel="noopener noreferrer" class="px-7 py-3 md:px-9 md:py-4 font-medium md:font-semibold bg-white text-gray-700 text-sm md:text-base rounded-md hover:bg-gray-50 transition ease-in-out duration-300 shadow-sm border border-gray-200 flex items-center space-x-2">
+                            <i data-feather="message-circle" class="w-4 h-4 text-green-600"></i>
+                            <span>WhatsApp</span>
                         </a>
-    
-                        <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-                            <i data-feather="facebook" class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
-                        </a>
-    
-                        <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-                            <i data-feather="codepen" class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
-                        </a>
-    
-                        <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-                            <i data-feather="at-sign" class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
-                        </a>
-    
-                        <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-                            <i data-feather="instagram" class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
+
+                        <a href="https://github.com/ItsNovaaa" target="_blank" rel="noopener noreferrer" class="px-5 py-3 md:py-4 font-medium bg-white text-gray-700 text-sm md:text-base rounded-md hover:bg-gray-50 transition ease-in-out duration-300 shadow-sm border border-gray-200 flex items-center space-x-2">
+                            <i data-feather="github" class="w-4 h-4"></i>
+                            <span>GitHub</span>
                         </a>
                     </div>
                 </div>
-
             </div>
+        </section>
 
+        <!-- CORE COMPETENCIES -->
+        <section class="py-10 md:py-16">
+            <div class="container max-w-screen-xl mx-auto px-4 sm:px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
+                        <div class="w-14 h-14 flex items-center justify-center bg-gray-200 rounded-md mb-6 text-gray-800">
+                            <i data-feather="code" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 text-xl mb-3">Fullstack Web Engineering</h4>
+                        <p class="font-normal text-gray-600 text-sm md:text-base leading-relaxed">
+                            Proficient in modern backends and reactive frontends using Laravel, Next.js, React, Astro, and Python. Experienced with RESTful APIs, WebSocket real-time communication (Laravel Reverb), Docker, and database optimization.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
+                        <div class="w-14 h-14 flex items-center justify-center bg-gray-200 rounded-md mb-6 text-gray-800">
+                            <i data-feather="smartphone" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 text-xl mb-3">Mobile App Development</h4>
+                        <p class="font-normal text-gray-600 text-sm md:text-base leading-relaxed">
+                            Building intuitive and cross-platform mobile experiences with Flutter & Dart, Android Studio, and Firebase. Proven delivery of enterprise KIOSK systems, OCR utilities, and all-in-one mobile applications.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
+                        <div class="w-14 h-14 flex items-center justify-center bg-gray-200 rounded-md mb-6 text-gray-800">
+                            <i data-feather="users" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 text-xl mb-3">Leadership & Project Management</h4>
+                        <p class="font-normal text-gray-600 text-sm md:text-base leading-relaxed">
+                            Head of Backend Division at WRI Polinema and Project Manager on production apps. Skilled in Git branching workflows, sprint task delegations, and coordinating cross-functional teams to hit tight deadlines.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED PROJECTS -->
+        <section class="py-12 md:py-20">
+            <div class="container max-w-screen-xl mx-auto px-4 sm:px-6">
+                <div class="flex flex-col lg:flex-row justify-between mb-12">
+                    <div class="mb-6 lg:mb-0">
+                        <h2 class="font-bold text-gray-800 text-3xl md:text-4xl mb-4">Featured Projects</h2>
+                        <p class="font-normal text-gray-500 text-sm md:text-base max-w-lg">
+                            Selected high-impact works spanning healthcare platforms, event ticketing with QRIS payment gateways, corporate kiosks, and web security.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="space-y-16">
+                    <!-- Project 01 -->
+                    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 pb-12 border-b border-gray-200">
+                        <h3 class="font-mono font-bold text-gray-400 text-2xl md:text-3xl">01</h3>
+                        <div class="hidden md:block w-16 h-0.5 bg-gray-300 mt-4"></div>
+                        <div class="flex-1">
+                            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                                <h4 class="font-bold text-gray-900 text-2xl md:text-3xl">Lifeline – Integrated Healthcare Solution</h4>
+                                <span class="text-xs font-semibold uppercase px-3 py-1 bg-gray-200 text-gray-700 rounded-full">2026 • Fullstack Dev & Project Manager</span>
+                            </div>
+                            <p class="font-normal text-gray-600 text-sm md:text-base mb-4 leading-relaxed">
+                                Health solution platform supporting doctor appointment reservations, medicine purchases, and real-time WebSocket chat between doctors and patients. Integrated DOKU QRIS payment gateway and orchestrated automated queue jobs. Led a team of 4 developers with Git branching conventions.
+                            </p>
+                            <div class="flex flex-wrap gap-2 text-xs font-medium text-gray-600">
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">Next.js</span>
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">Laravel</span>
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">Laravel Reverb (WebSocket)</span>
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">Docker</span>
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">MySQL</span>
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">DOKU QRIS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 02 -->
+                    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 pb-12 border-b border-gray-200">
+                        <h3 class="font-mono font-bold text-gray-400 text-2xl md:text-3xl">02</h3>
+                        <div class="hidden md:block w-16 h-0.5 bg-gray-300 mt-4"></div>
+                        <div class="flex-1">
+                            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                                <h4 class="font-bold text-gray-900 text-2xl md:text-3xl">Efwan Chapter Indonesia – F1 Ticketing Platform</h4>
+                                <span class="text-xs font-semibold uppercase px-3 py-1 bg-gray-200 text-gray-700 rounded-full">2026 • Freelance Fullstack</span>
+                            </div>
+                            <p class="font-normal text-gray-600 text-sm md:text-base mb-4 leading-relaxed">
+                                Complete community event ticketing platform for Formula 1 fans in Malang. Features automated QRIS payment settlement via DOKU, automated email delivery of personalized event tickets, and barcode/QR verification for attendee check-in.
+                            </p>
+                            <div class="flex flex-wrap gap-2 text-xs font-medium text-gray-600">
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">Next.js</span>
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">Laravel</span>
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">DOKU Payment Gateway</span>
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">QR Code Attendance</span>
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">Mailer Engine</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 03 -->
+                    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 pb-12 border-b border-gray-200">
+                        <h3 class="font-mono font-bold text-gray-400 text-2xl md:text-3xl">03</h3>
+                        <div class="hidden md:block w-16 h-0.5 bg-gray-300 mt-4"></div>
+                        <div class="flex-1">
+                            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                                <h4 class="font-bold text-gray-900 text-2xl md:text-3xl">KIOSK System – PT. Smelting Gresik</h4>
+                                <span class="text-xs font-semibold uppercase px-3 py-1 bg-gray-200 text-gray-700 rounded-full">2024 • Freelance Mobile Developer</span>
+                            </div>
+                            <p class="font-normal text-gray-600 text-sm md:text-base mb-4 leading-relaxed">
+                                Interactive Android-based self-service kiosk application designed to deliver real-time operational announcements and visitor information in PT. Smelting Gresik facilities with intuitive touch-screen UI.
+                            </p>
+                            <div class="flex flex-wrap gap-2 text-xs font-medium text-gray-600">
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">Android Studio</span>
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">Java / Kotlin</span>
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">Bootstrap</span>
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 04 -->
+                    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 pb-12 border-b border-gray-200">
+                        <h3 class="font-mono font-bold text-gray-400 text-2xl md:text-3xl">04</h3>
+                        <div class="hidden md:block w-16 h-0.5 bg-gray-300 mt-4"></div>
+                        <div class="flex-1">
+                            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                                <h4 class="font-bold text-gray-900 text-2xl md:text-3xl">Optical Character Recognition (OCR) Engine</h4>
+                                <span class="text-xs font-semibold uppercase px-3 py-1 bg-gray-200 text-gray-700 rounded-full">2024 • Dosen Ngoding</span>
+                            </div>
+                            <p class="font-normal text-gray-600 text-sm md:text-base mb-4 leading-relaxed">
+                                Cross-platform mobile (Flutter) and web OCR application powered by Laravel Filament. Implemented asynchronous Laravel Queue Jobs for robust background processing during peak request volumes.
+                            </p>
+                            <div class="flex flex-wrap gap-2 text-xs font-medium text-gray-600">
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">Flutter & Dart</span>
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">Laravel Filament</span>
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">Laravel Queue Jobs</span>
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">REST API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 05 -->
+                    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 pb-12 border-b border-gray-200">
+                        <h3 class="font-mono font-bold text-gray-400 text-2xl md:text-3xl">05</h3>
+                        <div class="hidden md:block w-16 h-0.5 bg-gray-300 mt-4"></div>
+                        <div class="flex-1">
+                            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                                <h4 class="font-bold text-gray-900 text-2xl md:text-3xl">Suara Nahdliyin – Secure News Portal</h4>
+                                <span class="text-xs font-semibold uppercase px-3 py-1 bg-gray-200 text-gray-700 rounded-full">2022 – 2023 • Freelance Fullstack</span>
+                            </div>
+                            <p class="font-normal text-gray-600 text-sm md:text-base mb-4 leading-relaxed">
+                                Fast-loading news media web platform built with Astro.js. Features automated cron-job news scraping, full-text real-time search, RBAC editorial dashboard, and rigorous security protections against XSS, CSRF, and SQL Injection.
+                            </p>
+                            <div class="flex flex-wrap gap-2 text-xs font-medium text-gray-600">
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">Astro.js</span>
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">Cron Jobs / Scraping</span>
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">RBAC Management</span>
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">Web Security</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 06 -->
+                    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+                        <h3 class="font-mono font-bold text-gray-400 text-2xl md:text-3xl">06</h3>
+                        <div class="hidden md:block w-16 h-0.5 bg-gray-300 mt-4"></div>
+                        <div class="flex-1">
+                            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                                <h4 class="font-bold text-gray-900 text-2xl md:text-3xl">SPK Decision Support System (MEREC & MARCOS)</h4>
+                                <span class="text-xs font-semibold uppercase px-3 py-1 bg-gray-200 text-gray-700 rounded-full">2025 • Fullstack Developer</span>
+                            </div>
+                            <p class="font-normal text-gray-600 text-sm md:text-base mb-4 leading-relaxed">
+                                Scientific decision-making calculation web app incorporating MEREC (Method based on the Removal Effects of Criteria) and MARCOS (Measurement of Alternatives and Ranking according to COmpromise Solution) algorithms.
+                            </p>
+                            <div class="flex flex-wrap gap-2 text-xs font-medium text-gray-600">
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">Python</span>
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">Tailwind CSS</span>
+                                <span class="bg-gray-200 px-2.5 py-1 rounded">Mathematical Modeling</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section class="py-12 md:py-20 bg-gray-50 border-t border-b border-gray-200">
+            <div class="container max-w-screen-xl mx-auto px-4 sm:px-6">
+                <div class="mb-12">
+                    <h2 class="font-bold text-gray-800 text-3xl md:text-4xl mb-3">Education</h2>
+                    <p class="font-normal text-gray-500 text-sm md:text-base">Academic history and specialized qualifications</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Polinema -->
+                    <div class="bg-white p-8 rounded-lg border border-gray-200 shadow-sm">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 bg-gray-100 text-gray-700 rounded-md">2024 – Present</span>
+                            <span class="text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">GPA: 3.67 / 4.00</span>
+                        </div>
+                        <h4 class="font-bold text-gray-900 text-xl mb-1">Politeknik Negeri Malang (Polinema)</h4>
+                        <p class="text-sm font-medium text-gray-500 mb-4">D4 Teknologi Informasi - Sistem Informasi Bisnis</p>
+                        <p class="font-normal text-gray-600 text-sm leading-relaxed mb-6">
+                            Active 4th semester student focused on software engineering, distributed systems, and business technology workflows. Actively contributes as Head of Backend Division at Workshop Riset Informatika (WRI) and participates in tech competitions.
+                        </p>
+                        <div class="relative inline-block">
+                            <a href="https://www.polinema.ac.id/" target="_blank" rel="noopener noreferrer" class="font-semibold text-gray-800 text-sm hover:text-blue-600 transition flex items-center space-x-1">
+                                <span>Visit Institution</span>
+                                <i data-feather="external-link" class="w-3.5 h-3.5"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- SMKN 1 Boyolangu -->
+                    <div class="bg-white p-8 rounded-lg border border-gray-200 shadow-sm">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 bg-gray-100 text-gray-700 rounded-md">2021 – 2024</span>
+                            <span class="text-xs font-bold text-green-700 bg-green-50 px-3 py-1 rounded-full">Graduated</span>
+                        </div>
+                        <h4 class="font-bold text-gray-900 text-xl mb-1">SMK Negeri 1 Boyolangu</h4>
+                        <p class="text-sm font-medium text-gray-500 mb-4">Rekayasa Perangkat Lunak (Software Engineering)</p>
+                        <p class="font-normal text-gray-600 text-sm leading-relaxed mb-6">
+                            Acquired strong foundation in computer science, database design, algorithms, and application architecture. Completed full-time professional internship and established successful freelance coding initiatives during vocational study.
+                        </p>
+                        <div class="relative inline-block">
+                            <a href="http://www.smknegeri1boyolangu.ac.id/" target="_blank" rel="noopener noreferrer" class="font-semibold text-gray-800 text-sm hover:text-blue-600 transition flex items-center space-x-1">
+                                <span>Visit School</span>
+                                <i data-feather="external-link" class="w-3.5 h-3.5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE & ORGANIZATIONS -->
+        <section class="py-12 md:py-20">
+            <div class="container max-w-screen-xl mx-auto px-4 sm:px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Professional Experience -->
+                    <div>
+                        <div class="flex items-center space-x-3 mb-8">
+                            <div class="p-2 bg-gray-200 rounded-md text-gray-800">
+                                <i data-feather="briefcase" class="w-5 h-5"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800 text-2xl md:text-3xl">Work Experience</h3>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="p-5 bg-white rounded-lg border border-gray-200 shadow-sm">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 text-base md:text-lg">Efwan Chapter Indonesia</h4>
+                                        <p class="text-xs md:text-sm font-medium text-gray-500">Freelance Fullstack Developer</p>
+                                    </div>
+                                    <span class="text-xs font-semibold px-2.5 py-1 bg-gray-100 text-gray-700 rounded">2026</span>
+                                </div>
+                                <p class="text-xs md:text-sm text-gray-600 mt-2">Developed automated ticketing platform with QRIS (DOKU) payment gateway, dynamic attendee QR check-ins, and automated ticket mailers.</p>
+                            </div>
+
+                            <div class="p-5 bg-white rounded-lg border border-gray-200 shadow-sm">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 text-base md:text-lg">Fakta Data Yaqut</h4>
+                                        <p class="text-xs md:text-sm font-medium text-gray-500">Freelance Fullstack Developer</p>
+                                    </div>
+                                    <span class="text-xs font-semibold px-2.5 py-1 bg-gray-100 text-gray-700 rounded">2026</span>
+                                </div>
+                                <p class="text-xs md:text-sm text-gray-600 mt-2">Built high-traffic public figure web portal with Laravel, Next.js, and multi-role article management.</p>
+                            </div>
+
+                            <div class="p-5 bg-white rounded-lg border border-gray-200 shadow-sm">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 text-base md:text-lg">Rembang Migas & Sebaneh</h4>
+                                        <p class="text-xs md:text-sm font-medium text-gray-500">Freelance Frontend & Mobile Developer</p>
+                                    </div>
+                                    <span class="text-xs font-semibold px-2.5 py-1 bg-gray-100 text-gray-700 rounded">2025</span>
+                                </div>
+                                <p class="text-xs md:text-sm text-gray-600 mt-2">Engineered responsive enterprise web profile for Rembang Migas and All-in-One mobile app using Flutter.</p>
+                            </div>
+
+                            <div class="p-5 bg-white rounded-lg border border-gray-200 shadow-sm">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 text-base md:text-lg">PT. Smelting Gresik</h4>
+                                        <p class="text-xs md:text-sm font-medium text-gray-500">Freelance Mobile Developer</p>
+                                    </div>
+                                    <span class="text-xs font-semibold px-2.5 py-1 bg-gray-100 text-gray-700 rounded">2024</span>
+                                </div>
+                                <p class="text-xs md:text-sm text-gray-600 mt-2">Delivered interactive self-service KIOSK application for company operational information delivery.</p>
+                            </div>
+
+                            <div class="p-5 bg-white rounded-lg border border-gray-200 shadow-sm">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 text-base md:text-lg">Dosen Ngoding</h4>
+                                        <p class="text-xs md:text-sm font-medium text-gray-500">Freelance Fullstack Developer</p>
+                                    </div>
+                                    <span class="text-xs font-semibold px-2.5 py-1 bg-gray-100 text-gray-700 rounded">2024</span>
+                                </div>
+                                <p class="text-xs md:text-sm text-gray-600 mt-2">Architected OCR engine for Android & Web using Flutter, Laravel Filament, and asynchronous Queue Jobs.</p>
+                            </div>
+
+                            <div class="p-5 bg-white rounded-lg border border-gray-200 shadow-sm">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 text-base md:text-lg">PT. Sekawan Media</h4>
+                                        <p class="text-xs md:text-sm font-medium text-gray-500">Intern Fullstack Developer</p>
+                                    </div>
+                                    <span class="text-xs font-semibold px-2.5 py-1 bg-gray-100 text-gray-700 rounded">2022 – 2023</span>
+                                </div>
+                                <p class="text-xs md:text-sm text-gray-600 mt-2">Participated directly in internal corporate audit systems, software documentation, and client feature sprints.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Leadership & Organization Experience -->
+                    <div>
+                        <div class="flex items-center space-x-3 mb-8">
+                            <div class="p-2 bg-gray-200 rounded-md text-gray-800">
+                                <i data-feather="award" class="w-5 h-5"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800 text-2xl md:text-3xl">Organizations & Leadership</h3>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="p-5 bg-white rounded-lg border border-gray-200 shadow-sm">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 text-base md:text-lg">Workshop Riset Informatika (WRI) Polinema</h4>
+                                        <p class="text-xs md:text-sm font-semibold text-gray-700">Kepala Divisi Backend</p>
+                                    </div>
+                                    <span class="text-xs font-semibold px-2.5 py-1 bg-green-100 text-green-800 rounded">Sep 2025 – Present</span>
+                                </div>
+                                <p class="text-xs md:text-sm text-gray-600 mt-2">Directing curriculum, coordinating mentors, and structuring advanced backend development learning programs for university members.</p>
+                            </div>
+
+                            <div class="p-5 bg-white rounded-lg border border-gray-200 shadow-sm">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 text-base md:text-lg">Ketua Pelaksana Technically Ramadhan</h4>
+                                        <p class="text-xs md:text-sm font-medium text-gray-500">WRI Politeknik Negeri Malang</p>
+                                    </div>
+                                    <span class="text-xs font-semibold px-2.5 py-1 bg-gray-100 text-gray-700 rounded">Februari 2026</span>
+                                </div>
+                                <p class="text-xs md:text-sm text-gray-600 mt-2">Led full end-to-end execution of organization flagship event, spanning conceptual planning, cross-divisional committee management, and post-event evaluation.</p>
+                            </div>
+
+                            <div class="p-5 bg-white rounded-lg border border-gray-200 shadow-sm">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 text-base md:text-lg">Event Coordinator & Programming Mentor</h4>
+                                        <p class="text-xs md:text-sm font-medium text-gray-500">WRI Open Recruitment & Beta Testing Class</p>
+                                    </div>
+                                    <span class="text-xs font-semibold px-2.5 py-1 bg-gray-100 text-gray-700 rounded">Sep – Okt 2025</span>
+                                </div>
+                                <p class="text-xs md:text-sm text-gray-600 mt-2">Taught programming fundamentals to incoming freshmen; coordinated selection logistics and Hacktober festivity pipelines.</p>
+                            </div>
+
+                            <div class="p-5 bg-white rounded-lg border border-gray-200 shadow-sm">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 text-base md:text-lg">Efwan Chapter Indonesia</h4>
+                                        <p class="text-xs md:text-sm font-medium text-gray-500">Event Crew & IT Support</p>
+                                    </div>
+                                    <span class="text-xs font-semibold px-2.5 py-1 bg-gray-100 text-gray-700 rounded">Jan 2026 – Present</span>
+                                </div>
+                                <p class="text-xs md:text-sm text-gray-600 mt-2">Managing live event ticketing applications and providing direct technical assistance during community gatherings.</p>
+                            </div>
+
+                            <div class="p-5 bg-white rounded-lg border border-gray-200 shadow-sm">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 text-base md:text-lg">Bantengbalap.id</h4>
+                                        <p class="text-xs md:text-sm font-medium text-gray-500">Social Media Specialist & Content Creator</p>
+                                    </div>
+                                    <span class="text-xs font-semibold px-2.5 py-1 bg-gray-100 text-gray-700 rounded">Mar 2026 – Present</span>
+                                </div>
+                                <p class="text-xs md:text-sm text-gray-600 mt-2">Curating high-engagement motorsport graphics, reels, and feeds with structured content calendars.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS & TECHNOLOGIES -->
+        <section class="py-12 md:py-20 bg-gray-50 border-t border-b border-gray-200">
+            <div class="container max-w-screen-xl mx-auto px-4 sm:px-6">
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <h2 class="font-bold text-gray-800 text-3xl md:text-4xl mb-4">Skills & Technical Stack</h2>
+                    <p class="font-normal text-gray-500 text-sm md:text-base">
+                        A versatile toolkit acquired through rigorous vocational training, university curriculum, and real-world production projects.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                        <div class="text-gray-800 mb-3"><i data-feather="server" class="w-6 h-6"></i></div>
+                        <h4 class="font-bold text-gray-800 text-base mb-3">Backend & APIs</h4>
+                        <ul class="text-xs md:text-sm text-gray-600 space-y-1.5">
+                            <li>• Laravel & PHP</li>
+                            <li>• Next.js & Node.js</li>
+                            <li>• Python & Go</li>
+                            <li>• RESTful API Architecture</li>
+                            <li>• Laravel Reverb (WebSocket)</li>
+                            <li>• Queue Jobs & Cron Tasks</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                        <div class="text-gray-800 mb-3"><i data-feather="smartphone" class="w-6 h-6"></i></div>
+                        <h4 class="font-bold text-gray-800 text-base mb-3">Mobile & Frontend</h4>
+                        <ul class="text-xs md:text-sm text-gray-600 space-y-1.5">
+                            <li>• Flutter & Dart</li>
+                            <li>• Android Studio</li>
+                            <li>• React & Astro.js</li>
+                            <li>• Tailwind CSS & Bootstrap</li>
+                            <li>• Svelte & Vue.js basics</li>
+                            <li>• Responsive Web Design</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                        <div class="text-gray-800 mb-3"><i data-feather="database" class="w-6 h-6"></i></div>
+                        <h4 class="font-bold text-gray-800 text-base mb-3">Database & Tools</h4>
+                        <ul class="text-xs md:text-sm text-gray-600 space-y-1.5">
+                            <li>• MySQL & PostgreSQL</li>
+                            <li>• Firebase Auth & Firestore</li>
+                            <li>• Docker Containers</li>
+                            <li>• Git & GitHub Version Control</li>
+                            <li>• Postman API Testing</li>
+                            <li>• DOKU Payment Gateway</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                        <div class="text-gray-800 mb-3"><i data-feather="check-circle" class="w-6 h-6"></i></div>
+                        <h4 class="font-bold text-gray-800 text-base mb-3">Workflow & Design</h4>
+                        <ul class="text-xs md:text-sm text-gray-600 space-y-1.5">
+                            <li>• Project Management & Agile</li>
+                            <li>• Figma UI/UX Prototyping</li>
+                            <li>• Obsidian & Notion</li>
+                            <li>• Technical Documentation</li>
+                            <li>• Public Speaking & Mentoring</li>
+                            <li>• Bilingual (ID & EN)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER & CONTACT -->
+        <footer class="py-16 md:py-24">
+            <div class="container max-w-screen-xl mx-auto px-4 sm:px-6">
+                <div class="text-center max-w-2xl mx-auto">
+                    <h2 class="font-bold text-gray-900 text-3xl md:text-5xl mb-4">Let's Connect</h2>
+                    <p class="font-normal text-gray-500 text-sm md:text-base mb-8 leading-relaxed">
+                        I am actively open to internships, full-time positions, and freelance software engineering projects. Feel free to reach out to discuss collaboration!
+                    </p>
+
+                    <div class="flex flex-wrap items-center justify-center gap-4 mb-12">
+                        <a href="mailto:naufalwahyudiansyah7@gmail.com" class="px-6 py-3 bg-gray-800 text-white rounded-md text-sm md:text-base font-medium hover:bg-gray-700 transition flex items-center space-x-2">
+                            <i data-feather="mail" class="w-4 h-4"></i>
+                            <span>naufalwahyudiansyah7@gmail.com</span>
+                        </a>
+
+                        <a href="https://wa.me/6281915862210" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-white border border-gray-300 text-gray-800 rounded-md text-sm md:text-base font-medium hover:bg-gray-50 transition flex items-center space-x-2">
+                            <i data-feather="phone" class="w-4 h-4 text-green-600"></i>
+                            <span>+62 819-1586-2210</span>
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-center space-x-4 mb-8">
+                        <a href="https://github.com/ItsNovaaa" target="_blank" rel="noopener noreferrer" class="w-12 h-12 flex items-center justify-center rounded-full bg-white border border-gray-200 text-gray-700 hover:bg-gray-800 hover:text-white transition ease-in-out duration-300 shadow-sm" title="GitHub">
+                            <i data-feather="github" class="w-5 h-5"></i>
+                        </a>
+
+                        <a href="https://instagram.com/its.novari" target="_blank" rel="noopener noreferrer" class="w-12 h-12 flex items-center justify-center rounded-full bg-white border border-gray-200 text-gray-700 hover:bg-pink-600 hover:text-white transition ease-in-out duration-300 shadow-sm" title="Instagram">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+
+                        <a href="mailto:naufalwahyudiansyah7@gmail.com" class="w-12 h-12 flex items-center justify-center rounded-full bg-white border border-gray-200 text-gray-700 hover:bg-blue-600 hover:text-white transition ease-in-out duration-300 shadow-sm" title="Email">
+                            <i data-feather="at-sign" class="w-5 h-5"></i>
+                        </a>
+
+                        <a href="assets/CV_Naufal_Ramadhan.pdf" download="CV_Naufal_Ramadhan.pdf" class="w-12 h-12 flex items-center justify-center rounded-full bg-white border border-gray-200 text-gray-700 hover:bg-gray-800 hover:text-white transition ease-in-out duration-300 shadow-sm" title="Download CV">
+                            <i data-feather="file-text" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+
+                    <p class="text-xs text-gray-400">
+                        © 2026 Naufal Ramadhan Wahyudiansyah. Crafted with Tailwind CSS & Feather Icons.
+                    </p>
+                </div>
+            </div>
         </footer>
 
-
         <script>
-            feather.replace()
+            feather.replace();
         </script>
-
     </body>
 </html>
