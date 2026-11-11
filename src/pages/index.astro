@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.svelte';
+import Hero from '../components/Hero.svelte';
+import Capabilities from '../components/Capabilities.svelte';
+import SelectedWork from '../components/SelectedWork.svelte';
+import Education from '../components/Education.svelte';
+import Experience from '../components/Experience.svelte';
+import Leadership from '../components/Leadership.svelte';
+import Toolkit from '../components/Toolkit.svelte';
+import Contact from '../components/Contact.svelte';
+import Footer from '../components/Footer.svelte';
+---
+
+<Layout title="Nova — Fullstack & Mobile Developer">
+  <main class="editorial-grid overflow-hidden">
+    <section class="hero-wash relative min-h-screen border-b hairline">
+      <Header client:load />
+      <Hero client:load />
+    </section>
+
+    <Capabilities client:visible />
+    <SelectedWork client:visible />
+    <Education client:visible />
+    <Experience client:visible />
+    <Leadership client:visible />
+    <Toolkit client:visible />
+    <Contact client:visible />
+    <Footer />
+  </main>
+</Layout>
