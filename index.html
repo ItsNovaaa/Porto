@@ -1,575 +1,457 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Naufal Ramadhan Wahyudiansyah - Fullstack & Mobile Developer</title>
-        <link rel="stylesheet" href="assets/css/tailwind.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <style>
-            body {
-                font-family: 'Poppins', sans-serif;
-            }
-        </style>
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nova — fullstack and mobile developer.">
+  <title>Nova — Fullstack & Mobile Developer</title>
+  <link rel="stylesheet" href="assets/css/tailwind.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --ink: #0b0b0b;
+      --line: rgba(11, 11, 11, .14);
+      --paper: #f7f8f3;
+    }
 
-    <body class="bg-gray-100 text-gray-800 antialiased selection:bg-gray-800 selection:text-white">
-        
-        <!-- HEADER / NAVIGATION -->
-        <header class="py-6 md:py-10">
-            <div class="container max-w-screen-xl mx-auto px-4 sm:px-6">
-                <nav class="flex items-center justify-between">
-                    <div class="flex items-center space-x-3">
-                        <img src="assets/image/navbar-logo.png" alt="Logo" class="w-8 h-8 md:w-10 md:h-10 object-contain">
-                        <span class="font-bold text-gray-800 text-lg md:text-xl tracking-tight">Naufal<span class="text-gray-500">.dev</span></span>
-                    </div>
+    * {
+      box-sizing: border-box;
+    }
 
-                    <div class="flex items-center space-x-3">
-                        <a href="assets/CV_Naufal_Ramadhan.pdf" download="CV_Naufal_Ramadhan.pdf" target="_blank" class="px-5 py-2.5 md:px-7 md:py-3 bg-white font-medium text-gray-700 text-sm md:text-base rounded-md hover:bg-gray-800 hover:text-white transition ease-in-out duration-300 shadow-sm flex items-center space-x-2 border border-gray-200">
-                            <i data-feather="download" class="w-4 h-4"></i>
-                            <span>Get my CV</span>
-                        </a>
-                    </div>
-                </nav>
-            </div>
-        </header>
+    html {
+      scroll-behavior: smooth;
+    }
 
-        <!-- HERO SECTION -->
-        <section class="py-12 md:py-20">
-            <div class="container max-w-screen-xl mx-auto px-4 sm:px-6">
-                <div class="text-center">
-                    <h6 class="font-medium text-gray-500 text-base md:text-xl uppercase tracking-widest mb-3">Naufal Ramadhan Wahyudiansyah</h6>
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Manrope, sans-serif;
+    }
 
-                    <h1 class="font-bold text-gray-900 text-3xl sm:text-5xl md:text-6xl leading-tight mb-6">
-                        Fullstack & Mobile Developer
-                    </h1>
+    .mono {
+      font-family: 'DM Mono', monospace;
+    }
 
-                    <p class="font-normal text-gray-600 text-base md:text-lg max-w-3xl mx-auto mb-10 leading-relaxed">
-                        Undergraduate Information Technology student at <strong class="text-gray-800 font-semibold">Politeknik Negeri Malang</strong> (GPA 3.67). Experienced in architecting robust web & mobile applications (Laravel, Next.js, Flutter), managing technology projects, and leading development teams.
-                    </p>
+    .editorial-grid {
+      background-image: none;
+    }
 
-                    <div class="flex flex-wrap justify-center items-center gap-4">
-                        <a href="mailto:naufalwahyudiansyah7@gmail.com" class="px-7 py-3 md:px-9 md:py-4 font-medium md:font-semibold bg-gray-800 text-gray-50 text-sm md:text-base rounded-md hover:bg-gray-700 transition ease-in-out duration-300 shadow flex items-center space-x-2">
-                            <i data-feather="mail" class="w-4 h-4"></i>
-                            <span>Hire Me</span>
-                        </a>
+    .hero-wash {
+      background: radial-gradient(ellipse at 76% 58%, rgba(196, 255, 195, .9), transparent 43%), linear-gradient(120deg, #fbfcf8 22%, #eefff0 65%, #c8fff4);
+    }
 
-                        <a href="https://wa.me/6281915862210" target="_blank" rel="noopener noreferrer" class="px-7 py-3 md:px-9 md:py-4 font-medium md:font-semibold bg-white text-gray-700 text-sm md:text-base rounded-md hover:bg-gray-50 transition ease-in-out duration-300 shadow-sm border border-gray-200 flex items-center space-x-2">
-                            <i data-feather="message-circle" class="w-4 h-4 text-green-600"></i>
-                            <span>WhatsApp</span>
-                        </a>
+    .hairline {
+      border-color: var(--line);
+    }
 
-                        <a href="https://github.com/ItsNovaaa" target="_blank" rel="noopener noreferrer" class="px-5 py-3 md:py-4 font-medium bg-white text-gray-700 text-sm md:text-base rounded-md hover:bg-gray-50 transition ease-in-out duration-300 shadow-sm border border-gray-200 flex items-center space-x-2">
-                            <i data-feather="github" class="w-4 h-4"></i>
-                            <span>GitHub</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+    .oval {
+      border: 1px solid rgba(11, 11, 11, .13);
+      border-radius: 50%;
+    }
 
-        <!-- CORE COMPETENCIES -->
-        <section class="py-10 md:py-16">
-            <div class="container max-w-screen-xl mx-auto px-4 sm:px-6">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
-                        <div class="w-14 h-14 flex items-center justify-center bg-gray-200 rounded-md mb-6 text-gray-800">
-                            <i data-feather="code" class="w-6 h-6"></i>
-                        </div>
-                        <h4 class="font-semibold text-gray-800 text-xl mb-3">Fullstack Web Engineering</h4>
-                        <p class="font-normal text-gray-600 text-sm md:text-base leading-relaxed">
-                            Proficient in modern backends and reactive frontends using Laravel, Next.js, React, Astro, and Python. Experienced with RESTful APIs, WebSocket real-time communication (Laravel Reverb), Docker, and database optimization.
-                        </p>
-                    </div>
-                    
-                    <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
-                        <div class="w-14 h-14 flex items-center justify-center bg-gray-200 rounded-md mb-6 text-gray-800">
-                            <i data-feather="smartphone" class="w-6 h-6"></i>
-                        </div>
-                        <h4 class="font-semibold text-gray-800 text-xl mb-3">Mobile App Development</h4>
-                        <p class="font-normal text-gray-600 text-sm md:text-base leading-relaxed">
-                            Building intuitive and cross-platform mobile experiences with Flutter & Dart, Android Studio, and Firebase. Proven delivery of enterprise KIOSK systems, OCR utilities, and all-in-one mobile applications.
-                        </p>
-                    </div>
-                    
-                    <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
-                        <div class="w-14 h-14 flex items-center justify-center bg-gray-200 rounded-md mb-6 text-gray-800">
-                            <i data-feather="users" class="w-6 h-6"></i>
-                        </div>
-                        <h4 class="font-semibold text-gray-800 text-xl mb-3">Leadership & Project Management</h4>
-                        <p class="font-normal text-gray-600 text-sm md:text-base leading-relaxed">
-                            Head of Backend Division at WRI Polinema and Project Manager on production apps. Skilled in Git branching workflows, sprint task delegations, and coordinating cross-functional teams to hit tight deadlines.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    .menu-panel {
+      display: none;
+    }
 
-        <!-- FEATURED PROJECTS -->
-        <section class="py-12 md:py-20">
-            <div class="container max-w-screen-xl mx-auto px-4 sm:px-6">
-                <div class="flex flex-col lg:flex-row justify-between mb-12">
-                    <div class="mb-6 lg:mb-0">
-                        <h2 class="font-bold text-gray-800 text-3xl md:text-4xl mb-4">Featured Projects</h2>
-                        <p class="font-normal text-gray-500 text-sm md:text-base max-w-lg">
-                            Selected high-impact works spanning healthcare platforms, event ticketing with QRIS payment gateways, corporate kiosks, and web security.
-                        </p>
-                    </div>
-                </div>
+    .menu-panel.is-open {
+      display: block;
+    }
 
-                <div class="space-y-16">
-                    <!-- Project 01 -->
-                    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 pb-12 border-b border-gray-200">
-                        <h3 class="font-mono font-bold text-gray-400 text-2xl md:text-3xl">01</h3>
-                        <div class="hidden md:block w-16 h-0.5 bg-gray-300 mt-4"></div>
-                        <div class="flex-1">
-                            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-                                <h4 class="font-bold text-gray-900 text-2xl md:text-3xl">Lifeline – Integrated Healthcare Solution</h4>
-                                <span class="text-xs font-semibold uppercase px-3 py-1 bg-gray-200 text-gray-700 rounded-full">2026 • Fullstack Dev & Project Manager</span>
-                            </div>
-                            <p class="font-normal text-gray-600 text-sm md:text-base mb-4 leading-relaxed">
-                                Health solution platform supporting doctor appointment reservations, medicine purchases, and real-time WebSocket chat between doctors and patients. Integrated DOKU QRIS payment gateway and orchestrated automated queue jobs. Led a team of 4 developers with Git branching conventions.
-                            </p>
-                            <div class="flex flex-wrap gap-2 text-xs font-medium text-gray-600">
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">Next.js</span>
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">Laravel</span>
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">Laravel Reverb (WebSocket)</span>
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">Docker</span>
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">MySQL</span>
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">DOKU QRIS</span>
-                            </div>
-                        </div>
-                    </div>
+    .menu-surface {
+      background: #f7f8f3;
+    }
 
-                    <!-- Project 02 -->
-                    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 pb-12 border-b border-gray-200">
-                        <h3 class="font-mono font-bold text-gray-400 text-2xl md:text-3xl">02</h3>
-                        <div class="hidden md:block w-16 h-0.5 bg-gray-300 mt-4"></div>
-                        <div class="flex-1">
-                            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-                                <h4 class="font-bold text-gray-900 text-2xl md:text-3xl">Efwan Chapter Indonesia – F1 Ticketing Platform</h4>
-                                <span class="text-xs font-semibold uppercase px-3 py-1 bg-gray-200 text-gray-700 rounded-full">2026 • Freelance Fullstack</span>
-                            </div>
-                            <p class="font-normal text-gray-600 text-sm md:text-base mb-4 leading-relaxed">
-                                Complete community event ticketing platform for Formula 1 fans in Malang. Features automated QRIS payment settlement via DOKU, automated email delivery of personalized event tickets, and barcode/QR verification for attendee check-in.
-                            </p>
-                            <div class="flex flex-wrap gap-2 text-xs font-medium text-gray-600">
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">Next.js</span>
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">Laravel</span>
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">DOKU Payment Gateway</span>
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">QR Code Attendance</span>
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">Mailer Engine</span>
-                            </div>
-                        </div>
-                    </div>
+    .hero-height {
+      min-height: calc(100vh - 73px);
+    }
 
-                    <!-- Project 03 -->
-                    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 pb-12 border-b border-gray-200">
-                        <h3 class="font-mono font-bold text-gray-400 text-2xl md:text-3xl">03</h3>
-                        <div class="hidden md:block w-16 h-0.5 bg-gray-300 mt-4"></div>
-                        <div class="flex-1">
-                            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-                                <h4 class="font-bold text-gray-900 text-2xl md:text-3xl">KIOSK System – PT. Smelting Gresik</h4>
-                                <span class="text-xs font-semibold uppercase px-3 py-1 bg-gray-200 text-gray-700 rounded-full">2024 • Freelance Mobile Developer</span>
-                            </div>
-                            <p class="font-normal text-gray-600 text-sm md:text-base mb-4 leading-relaxed">
-                                Interactive Android-based self-service kiosk application designed to deliver real-time operational announcements and visitor information in PT. Smelting Gresik facilities with intuitive touch-screen UI.
-                            </p>
-                            <div class="flex flex-wrap gap-2 text-xs font-medium text-gray-600">
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">Android Studio</span>
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">Java / Kotlin</span>
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">Bootstrap</span>
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">HTML/CSS</span>
-                            </div>
-                        </div>
-                    </div>
+    .contact-height {
+      min-height: 70vh;
+    }
 
-                    <!-- Project 04 -->
-                    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 pb-12 border-b border-gray-200">
-                        <h3 class="font-mono font-bold text-gray-400 text-2xl md:text-3xl">04</h3>
-                        <div class="hidden md:block w-16 h-0.5 bg-gray-300 mt-4"></div>
-                        <div class="flex-1">
-                            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-                                <h4 class="font-bold text-gray-900 text-2xl md:text-3xl">Optical Character Recognition (OCR) Engine</h4>
-                                <span class="text-xs font-semibold uppercase px-3 py-1 bg-gray-200 text-gray-700 rounded-full">2024 • Dosen Ngoding</span>
-                            </div>
-                            <p class="font-normal text-gray-600 text-sm md:text-base mb-4 leading-relaxed">
-                                Cross-platform mobile (Flutter) and web OCR application powered by Laravel Filament. Implemented asynchronous Laravel Queue Jobs for robust background processing during peak request volumes.
-                            </p>
-                            <div class="flex flex-wrap gap-2 text-xs font-medium text-gray-600">
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">Flutter & Dart</span>
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">Laravel Filament</span>
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">Laravel Queue Jobs</span>
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">REST API</span>
-                            </div>
-                        </div>
-                    </div>
+    .contact-title {
+      font-size: clamp(4rem, 9vw, 9rem);
+      letter-spacing: -.07em;
+    }
 
-                    <!-- Project 05 -->
-                    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 pb-12 border-b border-gray-200">
-                        <h3 class="font-mono font-bold text-gray-400 text-2xl md:text-3xl">05</h3>
-                        <div class="hidden md:block w-16 h-0.5 bg-gray-300 mt-4"></div>
-                        <div class="flex-1">
-                            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-                                <h4 class="font-bold text-gray-900 text-2xl md:text-3xl">Suara Nahdliyin – Secure News Portal</h4>
-                                <span class="text-xs font-semibold uppercase px-3 py-1 bg-gray-200 text-gray-700 rounded-full">2022 – 2023 • Freelance Fullstack</span>
-                            </div>
-                            <p class="font-normal text-gray-600 text-sm md:text-base mb-4 leading-relaxed">
-                                Fast-loading news media web platform built with Astro.js. Features automated cron-job news scraping, full-text real-time search, RBAC editorial dashboard, and rigorous security protections against XSS, CSRF, and SQL Injection.
-                            </p>
-                            <div class="flex flex-wrap gap-2 text-xs font-medium text-gray-600">
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">Astro.js</span>
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">Cron Jobs / Scraping</span>
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">RBAC Management</span>
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">Web Security</span>
-                            </div>
-                        </div>
-                    </div>
+    .display-title {
+      font-size: clamp(4.4rem, 12.4vw, 12.5rem);
+      line-height: .81;
+      letter-spacing: -.095em;
+      font-weight: 500;
+    }
 
-                    <!-- Project 06 -->
-                    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
-                        <h3 class="font-mono font-bold text-gray-400 text-2xl md:text-3xl">06</h3>
-                        <div class="hidden md:block w-16 h-0.5 bg-gray-300 mt-4"></div>
-                        <div class="flex-1">
-                            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-                                <h4 class="font-bold text-gray-900 text-2xl md:text-3xl">SPK Decision Support System (MEREC & MARCOS)</h4>
-                                <span class="text-xs font-semibold uppercase px-3 py-1 bg-gray-200 text-gray-700 rounded-full">2025 • Fullstack Developer</span>
-                            </div>
-                            <p class="font-normal text-gray-600 text-sm md:text-base mb-4 leading-relaxed">
-                                Scientific decision-making calculation web app incorporating MEREC (Method based on the Removal Effects of Criteria) and MARCOS (Measurement of Alternatives and Ranking according to COmpromise Solution) algorithms.
-                            </p>
-                            <div class="flex flex-wrap gap-2 text-xs font-medium text-gray-600">
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">Python</span>
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">Tailwind CSS</span>
-                                <span class="bg-gray-200 px-2.5 py-1 rounded">Mathematical Modeling</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    .display-title span {
+      display: block;
+    }
 
-        <!-- EDUCATION SECTION -->
-        <section class="py-12 md:py-20 bg-gray-50 border-t border-b border-gray-200">
-            <div class="container max-w-screen-xl mx-auto px-4 sm:px-6">
-                <div class="mb-12">
-                    <h2 class="font-bold text-gray-800 text-3xl md:text-4xl mb-3">Education</h2>
-                    <p class="font-normal text-gray-500 text-sm md:text-base">Academic history and specialized qualifications</p>
-                </div>
+    .display-title span:nth-child(2) {
+      margin-left: 18%;
+    }
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Polinema -->
-                    <div class="bg-white p-8 rounded-lg border border-gray-200 shadow-sm">
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 bg-gray-100 text-gray-700 rounded-md">2024 – Present</span>
-                            <span class="text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">GPA: 3.67 / 4.00</span>
-                        </div>
-                        <h4 class="font-bold text-gray-900 text-xl mb-1">Politeknik Negeri Malang (Polinema)</h4>
-                        <p class="text-sm font-medium text-gray-500 mb-4">D4 Teknologi Informasi - Sistem Informasi Bisnis</p>
-                        <p class="font-normal text-gray-600 text-sm leading-relaxed mb-6">
-                            Active 4th semester student focused on software engineering, distributed systems, and business technology workflows. Actively contributes as Head of Backend Division at Workshop Riset Informatika (WRI) and participates in tech competitions.
-                        </p>
-                        <div class="relative inline-block">
-                            <a href="https://www.polinema.ac.id/" target="_blank" rel="noopener noreferrer" class="font-semibold text-gray-800 text-sm hover:text-blue-600 transition flex items-center space-x-1">
-                                <span>Visit Institution</span>
-                                <i data-feather="external-link" class="w-3.5 h-3.5"></i>
-                            </a>
-                        </div>
-                    </div>
+    .display-title span:nth-child(3) {
+      margin-left: 4%;
+    }
 
-                    <!-- SMKN 1 Boyolangu -->
-                    <div class="bg-white p-8 rounded-lg border border-gray-200 shadow-sm">
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 bg-gray-100 text-gray-700 rounded-md">2021 – 2024</span>
-                            <span class="text-xs font-bold text-green-700 bg-green-50 px-3 py-1 rounded-full">Graduated</span>
-                        </div>
-                        <h4 class="font-bold text-gray-900 text-xl mb-1">SMK Negeri 1 Boyolangu</h4>
-                        <p class="text-sm font-medium text-gray-500 mb-4">Rekayasa Perangkat Lunak (Software Engineering)</p>
-                        <p class="font-normal text-gray-600 text-sm leading-relaxed mb-6">
-                            Acquired strong foundation in computer science, database design, algorithms, and application architecture. Completed full-time professional internship and established successful freelance coding initiatives during vocational study.
-                        </p>
-                        <div class="relative inline-block">
-                            <a href="http://www.smknegeri1boyolangu.ac.id/" target="_blank" rel="noopener noreferrer" class="font-semibold text-gray-800 text-sm hover:text-blue-600 transition flex items-center space-x-1">
-                                <span>Visit School</span>
-                                <i data-feather="external-link" class="w-3.5 h-3.5"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    .project-card {
+      transition: background .25s ease, transform .25s ease;
+    }
 
-        <!-- EXPERIENCE & ORGANIZATIONS -->
-        <section class="py-12 md:py-20">
-            <div class="container max-w-screen-xl mx-auto px-4 sm:px-6">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    <!-- Professional Experience -->
-                    <div>
-                        <div class="flex items-center space-x-3 mb-8">
-                            <div class="p-2 bg-gray-200 rounded-md text-gray-800">
-                                <i data-feather="briefcase" class="w-5 h-5"></i>
-                            </div>
-                            <h3 class="font-bold text-gray-800 text-2xl md:text-3xl">Work Experience</h3>
-                        </div>
+    .project-card:hover {
+      background: rgba(255, 255, 255, .4);
+      transform: translateY(-3px);
+    }
 
-                        <div class="space-y-6">
-                            <div class="p-5 bg-white rounded-lg border border-gray-200 shadow-sm">
-                                <div class="flex justify-between items-start">
-                                    <div>
-                                        <h4 class="font-semibold text-gray-900 text-base md:text-lg">Efwan Chapter Indonesia</h4>
-                                        <p class="text-xs md:text-sm font-medium text-gray-500">Freelance Fullstack Developer</p>
-                                    </div>
-                                    <span class="text-xs font-semibold px-2.5 py-1 bg-gray-100 text-gray-700 rounded">2026</span>
-                                </div>
-                                <p class="text-xs md:text-sm text-gray-600 mt-2">Developed automated ticketing platform with QRIS (DOKU) payment gateway, dynamic attendee QR check-ins, and automated ticket mailers.</p>
-                            </div>
+    @media (max-width: 767px) {
+      .editorial-grid {
+        background-size: 50% 100%;
+      }
 
-                            <div class="p-5 bg-white rounded-lg border border-gray-200 shadow-sm">
-                                <div class="flex justify-between items-start">
-                                    <div>
-                                        <h4 class="font-semibold text-gray-900 text-base md:text-lg">Fakta Data Yaqut</h4>
-                                        <p class="text-xs md:text-sm font-medium text-gray-500">Freelance Fullstack Developer</p>
-                                    </div>
-                                    <span class="text-xs font-semibold px-2.5 py-1 bg-gray-100 text-gray-700 rounded">2026</span>
-                                </div>
-                                <p class="text-xs md:text-sm text-gray-600 mt-2">Built high-traffic public figure web portal with Laravel, Next.js, and multi-role article management.</p>
-                            </div>
+      .display-title {
+        font-size: clamp(4.25rem, 21vw, 8rem);
+      }
 
-                            <div class="p-5 bg-white rounded-lg border border-gray-200 shadow-sm">
-                                <div class="flex justify-between items-start">
-                                    <div>
-                                        <h4 class="font-semibold text-gray-900 text-base md:text-lg">Rembang Migas & Sebaneh</h4>
-                                        <p class="text-xs md:text-sm font-medium text-gray-500">Freelance Frontend & Mobile Developer</p>
-                                    </div>
-                                    <span class="text-xs font-semibold px-2.5 py-1 bg-gray-100 text-gray-700 rounded">2025</span>
-                                </div>
-                                <p class="text-xs md:text-sm text-gray-600 mt-2">Engineered responsive enterprise web profile for Rembang Migas and All-in-One mobile app using Flutter.</p>
-                            </div>
+      .display-title span:nth-child(2) {
+        margin-left: 10%;
+      }
 
-                            <div class="p-5 bg-white rounded-lg border border-gray-200 shadow-sm">
-                                <div class="flex justify-between items-start">
-                                    <div>
-                                        <h4 class="font-semibold text-gray-900 text-base md:text-lg">PT. Smelting Gresik</h4>
-                                        <p class="text-xs md:text-sm font-medium text-gray-500">Freelance Mobile Developer</p>
-                                    </div>
-                                    <span class="text-xs font-semibold px-2.5 py-1 bg-gray-100 text-gray-700 rounded">2024</span>
-                                </div>
-                                <p class="text-xs md:text-sm text-gray-600 mt-2">Delivered interactive self-service KIOSK application for company operational information delivery.</p>
-                            </div>
+      .display-title span:nth-child(3) {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
 
-                            <div class="p-5 bg-white rounded-lg border border-gray-200 shadow-sm">
-                                <div class="flex justify-between items-start">
-                                    <div>
-                                        <h4 class="font-semibold text-gray-900 text-base md:text-lg">Dosen Ngoding</h4>
-                                        <p class="text-xs md:text-sm font-medium text-gray-500">Freelance Fullstack Developer</p>
-                                    </div>
-                                    <span class="text-xs font-semibold px-2.5 py-1 bg-gray-100 text-gray-700 rounded">2024</span>
-                                </div>
-                                <p class="text-xs md:text-sm text-gray-600 mt-2">Architected OCR engine for Android & Web using Flutter, Laravel Filament, and asynchronous Queue Jobs.</p>
-                            </div>
+<body>
+  <main class="editorial-grid overflow-hidden">
+    <section class="hero-wash relative min-h-screen border-b hairline">
+      <header class="relative z-10 flex items-center justify-between border-b hairline px-6 py-5 md:px-8">
+        <div class="mono text-xs uppercase tracking-widest md:text-sm">Malang, Indonesia</div>
+        <div class="mono hidden text-xs md:block">11 · 11 · 2026</div>
+        <div class="mono hidden text-xs md:block">Available for work</div>
+        <button id="menu-button" type="button" aria-expanded="false" aria-controls="menu-panel"
+          class="group flex items-center gap-3 text-xs uppercase tracking-widest">
+          <span>Menu</span><span class="block w-7 space-y-1"><i class="block h-px bg-black"></i><i
+              class="ml-2 block h-px bg-black"></i></span>
+        </button>
+        <div id="menu-panel"
+          class="menu-panel menu-surface absolute right-6 top-16 z-20 w-56 border hairline p-5 shadow-lg md:right-8">
+          <nav class="flex flex-col gap-4 text-sm"><a href="#about" class="hover:underline">About</a><a href="#work"
+              class="hover:underline">Selected work</a><a href="#contact" class="hover:underline">Contact</a></nav>
+        </div>
+      </header>
 
-                            <div class="p-5 bg-white rounded-lg border border-gray-200 shadow-sm">
-                                <div class="flex justify-between items-start">
-                                    <div>
-                                        <h4 class="font-semibold text-gray-900 text-base md:text-lg">PT. Sekawan Media</h4>
-                                        <p class="text-xs md:text-sm font-medium text-gray-500">Intern Fullstack Developer</p>
-                                    </div>
-                                    <span class="text-xs font-semibold px-2.5 py-1 bg-gray-100 text-gray-700 rounded">2022 – 2023</span>
-                                </div>
-                                <p class="text-xs md:text-sm text-gray-600 mt-2">Participated directly in internal corporate audit systems, software documentation, and client feature sprints.</p>
-                            </div>
-                        </div>
-                    </div>
+      <div class="hero-height relative grid grid-cols-1 md:grid-cols-5">
+        <div class="relative col-span-3 flex flex-col justify-between border-r hairline px-6 py-14 md:px-8 md:py-20">
+          <div class="display-title uppercase"><span>Building</span><span>Digital</span><span>Experiences</span></div>
+          <div class="mt-14 flex items-end justify-between gap-8 text-xs uppercase tracking-wide md:mt-0">
+            <p class="max-w-[15rem] leading-relaxed">Fullstack & mobile developer building useful digital products with
+              clarity and care.</p><span class="mono">01 — 06</span>
+          </div>
+          <div class="oval absolute left-[20%] top-[27%] h-20 w-36 md:h-28 md:w-52"></div>
+        </div>
+        <div class="relative col-span-2 flex flex-col justify-between px-6 py-14 md:px-8 md:py-20">
+          <div class="max-w-xs md:ml-auto">
+            <p class="mono mb-8 text-xs">01 / INTRODUCTION</p>
+            <h2 class="mb-4 text-2xl font-medium leading-tight md:text-3xl">I turn complex ideas into simple, dependable
+              experiences.</h2>
+            <p class="text-sm leading-relaxed opacity-60">Information Technology student at Politeknik Negeri Malang,
+              with hands-on experience across web, mobile, APIs, and technical leadership.</p>
+          </div>
+          <a href="mailto:ininopal222@gmail.com"
+            class="oval mx-auto flex h-32 w-32 items-center justify-center text-center text-sm transition hover:bg-black hover:text-white md:h-40 md:w-40">Start
+            a<br>conversation</a>
+          <div class="oval absolute bottom-[22%] right-[22%] h-16 w-28 opacity-60 md:h-24 md:w-40"></div>
+        </div>
+      </div>
+    </section>
 
-                    <!-- Leadership & Organization Experience -->
-                    <div>
-                        <div class="flex items-center space-x-3 mb-8">
-                            <div class="p-2 bg-gray-200 rounded-md text-gray-800">
-                                <i data-feather="award" class="w-5 h-5"></i>
-                            </div>
-                            <h3 class="font-bold text-gray-800 text-2xl md:text-3xl">Organizations & Leadership</h3>
-                        </div>
+    <section id="about" class="grid border-b hairline md:grid-cols-5">
+      <div class="border-r hairline px-6 py-8 md:px-8">
+        <p class="mono text-xs">02 / CAPABILITIES</p>
+      </div>
+      <div class="col-span-4 grid md:grid-cols-3">
+        <article class="border-b hairline px-6 py-8 md:border-b-0 md:border-r md:px-8">
+          <p class="mono mb-14 text-xs">01</p>
+          <h3 class="mb-3 text-xl font-semibold">Fullstack web</h3>
+          <p class="text-sm leading-relaxed opacity-60">Laravel, Next.js, React, Astro, REST APIs, WebSockets, Docker,
+            and databases.</p>
+        </article>
+        <article class="border-b hairline px-6 py-8 md:border-b-0 md:border-r md:px-8">
+          <p class="mono mb-14 text-xs">02</p>
+          <h3 class="mb-3 text-xl font-semibold">Mobile products</h3>
+          <p class="text-sm leading-relaxed opacity-60">Cross-platform Flutter applications, Android systems, OCR
+            utilities, and Firebase.</p>
+        </article>
+        <article class="px-6 py-8 md:px-8">
+          <p class="mono mb-14 text-xs">03</p>
+          <h3 class="mb-3 text-xl font-semibold">Team leadership</h3>
+          <p class="text-sm leading-relaxed opacity-60">Project management, sprint planning, Git workflows, mentoring,
+            and delivery.</p>
+        </article>
+      </div>
+    </section>
 
-                        <div class="space-y-6">
-                            <div class="p-5 bg-white rounded-lg border border-gray-200 shadow-sm">
-                                <div class="flex justify-between items-start">
-                                    <div>
-                                        <h4 class="font-semibold text-gray-900 text-base md:text-lg">Workshop Riset Informatika (WRI) Polinema</h4>
-                                        <p class="text-xs md:text-sm font-semibold text-gray-700">Kepala Divisi Backend</p>
-                                    </div>
-                                    <span class="text-xs font-semibold px-2.5 py-1 bg-green-100 text-green-800 rounded">Sep 2025 – Present</span>
-                                </div>
-                                <p class="text-xs md:text-sm text-gray-600 mt-2">Directing curriculum, coordinating mentors, and structuring advanced backend development learning programs for university members.</p>
-                            </div>
+    <section id="work" class="border-b hairline">
+      <div class="flex flex-col justify-between gap-6 border-b hairline px-6 py-8 md:flex-row md:items-end md:px-8">
+        <div>
+          <p class="mono mb-5 text-xs">03 / SELECTED WORK</p>
+          <h2 class="text-4xl font-medium tracking-tight md:text-7xl">Things I’ve built.</h2>
+        </div>
+        <p class="max-w-xs text-sm leading-relaxed opacity-60">A selection of production platforms, mobile tools, and
+          digital systems created for real people and real constraints.</p>
+      </div>
+      <div class="grid md:grid-cols-2">
+        <article class="project-card border-b hairline px-6 py-8 md:border-r md:px-8">
+          <div class="mb-20 flex justify-between"><span class="mono text-xs">01</span><span
+              class="mono text-xs opacity-50">2026</span></div>
+          <h3 class="mb-3 text-2xl font-medium">Lifeline</h3>
+          <p class="mb-6 max-w-md text-sm leading-relaxed opacity-60">Integrated healthcare platform for appointments,
+            medicine purchases, real-time doctor chat, and QRIS payments.</p>
+          <div class="flex flex-wrap gap-2 text-xs"><span class="border hairline px-2 py-1">Next.js</span><span
+              class="border hairline px-2 py-1">Laravel</span><span class="border hairline px-2 py-1">WebSocket</span>
+          </div>
+        </article>
+        <article class="project-card border-b hairline px-6 py-8 md:px-8">
+          <div class="mb-20 flex justify-between"><span class="mono text-xs">02</span><span
+              class="mono text-xs opacity-50">2026</span></div>
+          <h3 class="mb-3 text-2xl font-medium">Efwan Chapter</h3>
+          <p class="mb-6 max-w-md text-sm leading-relaxed opacity-60">Event ticketing platform with automated DOKU QRIS
+            settlement, email delivery, and QR attendee verification.</p>
+          <div class="flex flex-wrap gap-2 text-xs"><span class="border hairline px-2 py-1">Fullstack</span><span
+              class="border hairline px-2 py-1">Payments</span><span class="border hairline px-2 py-1">QR systems</span>
+          </div>
+        </article>
+        <article class="project-card border-b hairline px-6 py-8 md:border-r md:px-8">
+          <div class="mb-20 flex justify-between"><span class="mono text-xs">03</span><span
+              class="mono text-xs opacity-50">2024</span></div>
+          <h3 class="mb-3 text-2xl font-medium">OCR Engine</h3>
+          <p class="mb-6 max-w-md text-sm leading-relaxed opacity-60">Cross-platform OCR application powered by Flutter
+            and Laravel Filament, with asynchronous queue processing.</p>
+          <div class="flex flex-wrap gap-2 text-xs"><span class="border hairline px-2 py-1">Flutter</span><span
+              class="border hairline px-2 py-1">Laravel</span><span class="border hairline px-2 py-1">Queues</span>
+          </div>
+        </article>
+        <article class="project-card border-b hairline px-6 py-8 md:px-8">
+          <div class="mb-20 flex justify-between"><span class="mono text-xs">04</span><span
+              class="mono text-xs opacity-50">2024</span></div>
+          <h3 class="mb-3 text-2xl font-medium">Smelting KIOSK</h3>
+          <p class="mb-6 max-w-md text-sm leading-relaxed opacity-60">Interactive Android self-service kiosk delivering
+            operational announcements and visitor information.</p>
+          <div class="flex flex-wrap gap-2 text-xs"><span class="border hairline px-2 py-1">Android</span><span
+              class="border hairline px-2 py-1">Java</span><span class="border hairline px-2 py-1">UI systems</span>
+          </div>
+        </article>
+        <article class="project-card border-b hairline px-6 py-8 md:border-r md:px-8">
+          <div class="mb-20 flex justify-between"><span class="mono text-xs">05</span><span
+              class="mono text-xs opacity-50">2022—23</span></div>
+          <h3 class="mb-3 text-2xl font-medium">Suara Nahdliyin</h3>
+          <p class="mb-6 max-w-md text-sm leading-relaxed opacity-60">Fast-loading Astro news platform with automated
+            scraping, real-time search, RBAC, and protections against XSS, CSRF, and SQL injection.</p>
+          <div class="flex flex-wrap gap-2 text-xs"><span class="border hairline px-2 py-1">Astro.js</span><span
+              class="border hairline px-2 py-1">Security</span><span class="border hairline px-2 py-1">RBAC</span></div>
+        </article>
+        <article class="project-card border-b hairline px-6 py-8 md:px-8">
+          <div class="mb-20 flex justify-between"><span class="mono text-xs">06</span><span
+              class="mono text-xs opacity-50">2025</span></div>
+          <h3 class="mb-3 text-2xl font-medium">SPK Decision System</h3>
+          <p class="mb-6 max-w-md text-sm leading-relaxed opacity-60">Scientific decision-making application
+            implementing MEREC and MARCOS algorithms for alternative ranking.</p>
+          <div class="flex flex-wrap gap-2 text-xs"><span class="border hairline px-2 py-1">Python</span><span
+              class="border hairline px-2 py-1">Tailwind</span><span class="border hairline px-2 py-1">Modeling</span>
+          </div>
+        </article>
+      </div>
+    </section>
 
-                            <div class="p-5 bg-white rounded-lg border border-gray-200 shadow-sm">
-                                <div class="flex justify-between items-start">
-                                    <div>
-                                        <h4 class="font-semibold text-gray-900 text-base md:text-lg">Ketua Pelaksana Technically Ramadhan</h4>
-                                        <p class="text-xs md:text-sm font-medium text-gray-500">WRI Politeknik Negeri Malang</p>
-                                    </div>
-                                    <span class="text-xs font-semibold px-2.5 py-1 bg-gray-100 text-gray-700 rounded">Februari 2026</span>
-                                </div>
-                                <p class="text-xs md:text-sm text-gray-600 mt-2">Led full end-to-end execution of organization flagship event, spanning conceptual planning, cross-divisional committee management, and post-event evaluation.</p>
-                            </div>
+    <section class="grid border-b hairline md:grid-cols-5">
+      <div class="border-r hairline px-6 py-8 md:px-8">
+        <p class="mono text-xs">04 / EDUCATION</p>
+      </div>
+      <div class="col-span-4 grid md:grid-cols-2">
+        <article class="border-b hairline px-6 py-8 md:border-b-0 md:border-r md:px-8">
+          <div class="mb-16 flex justify-between text-xs"><span class="mono">2024 — PRESENT</span><span>GPA 3.67</span>
+          </div>
+          <h3 class="mb-2 text-2xl font-medium">Politeknik Negeri Malang</h3>
+          <p class="mb-4 text-sm opacity-60">D4 Information Technology — Business Information Systems</p>
+          <p class="text-sm leading-relaxed opacity-60">Focused on software engineering, distributed systems, and
+            business technology workflows. Head of Backend Division at WRI Polinema.</p>
+        </article>
+        <article class="px-6 py-8 md:px-8">
+          <div class="mb-16 flex justify-between text-xs"><span class="mono">2021 — 2024</span><span>GRADUATED</span>
+          </div>
+          <h3 class="mb-2 text-2xl font-medium">SMK Negeri 1 Boyolangu</h3>
+          <p class="mb-4 text-sm opacity-60">Software Engineering</p>
+          <p class="text-sm leading-relaxed opacity-60">Built a strong foundation in computer science, databases,
+            algorithms, and application architecture through vocational study and freelance work.</p>
+        </article>
+      </div>
+    </section>
 
-                            <div class="p-5 bg-white rounded-lg border border-gray-200 shadow-sm">
-                                <div class="flex justify-between items-start">
-                                    <div>
-                                        <h4 class="font-semibold text-gray-900 text-base md:text-lg">Event Coordinator & Programming Mentor</h4>
-                                        <p class="text-xs md:text-sm font-medium text-gray-500">WRI Open Recruitment & Beta Testing Class</p>
-                                    </div>
-                                    <span class="text-xs font-semibold px-2.5 py-1 bg-gray-100 text-gray-700 rounded">Sep – Okt 2025</span>
-                                </div>
-                                <p class="text-xs md:text-sm text-gray-600 mt-2">Taught programming fundamentals to incoming freshmen; coordinated selection logistics and Hacktober festivity pipelines.</p>
-                            </div>
+    <section class="border-b hairline">
+      <div class="border-b hairline px-6 py-8 md:px-8">
+        <p class="mono mb-5 text-xs">05 / EXPERIENCE</p>
+        <h2 class="text-4xl font-medium tracking-tight md:text-7xl">Where I’ve contributed.</h2>
+      </div>
+      <div class="grid md:grid-cols-2">
+        <article class="border-b hairline px-6 py-7 md:border-r md:px-8">
+          <div class="flex justify-between gap-4">
+            <div class="min-w-0">
+              <h3 class="break-words font-semibold">Efwan Chapter Indonesia</h3>
+              <p class="text-sm opacity-60">Freelance Fullstack Developer</p>
+            </div><span class="mono shrink-0 text-xs">2026</span>
+          </div>
+          <p class="mt-4 text-sm leading-relaxed opacity-60">Built automated ticketing with QRIS payments, attendee QR
+            check-ins, and ticket mailers.</p>
+        </article>
+        <article class="border-b hairline px-6 py-7 md:px-8">
+          <div class="flex justify-between gap-4">
+            <div class="min-w-0">
+              <h3 class="break-words font-semibold">Fakta Data Yaqut</h3>
+              <p class="text-sm opacity-60">Freelance Fullstack Developer</p>
+            </div><span class="mono shrink-0 text-xs">2026</span>
+          </div>
+          <p class="mt-4 text-sm leading-relaxed opacity-60">Built a high-traffic public figure portal with Laravel,
+            Next.js, and multi-role article management.</p>
+        </article>
+        <article class="border-b hairline px-6 py-7 md:border-r md:px-8">
+          <div class="flex justify-between gap-4">
+            <div class="min-w-0">
+              <h3 class="break-words font-semibold">Rembang Migas & Sebaneh</h3>
+              <p class="text-sm opacity-60">Frontend & Mobile Developer</p>
+            </div><span class="mono shrink-0 text-xs">2025</span>
+          </div>
+          <p class="mt-4 text-sm leading-relaxed opacity-60">Engineered a responsive enterprise profile and an
+            all-in-one Flutter mobile application.</p>
+        </article>
+        <article class="border-b hairline px-6 py-7 md:px-8">
+          <div class="flex justify-between gap-4">
+            <div class="min-w-0">
+              <h3 class="break-words font-semibold">PT. Smelting Gresik</h3>
+              <p class="text-sm opacity-60">Freelance Mobile Developer</p>
+            </div><span class="mono shrink-0 text-xs">2024</span>
+          </div>
+          <p class="mt-4 text-sm leading-relaxed opacity-60">Delivered an interactive self-service KIOSK for company
+            operational information.</p>
+        </article>
+        <article class="border-b hairline px-6 py-7 md:border-r md:px-8">
+          <div class="flex justify-between gap-4">
+            <div class="min-w-0">
+              <h3 class="break-words font-semibold">Dosen Ngoding</h3>
+              <p class="text-sm opacity-60">Freelance Fullstack Developer</p>
+            </div><span class="mono shrink-0 text-xs">2024</span>
+          </div>
+          <p class="mt-4 text-sm leading-relaxed opacity-60">Architected an OCR engine for Android and web with Laravel
+            Filament and queue jobs.</p>
+        </article>
+        <article class="border-b hairline px-6 py-7 md:px-8">
+          <div class="flex justify-between gap-4">
+            <div class="min-w-0">
+              <h3 class="break-words font-semibold">PT. Sekawan Media</h3>
+              <p class="text-sm opacity-60">Intern Fullstack Developer</p>
+            </div><span class="mono shrink-0 text-xs">2022—23</span>
+          </div>
+          <p class="mt-4 text-sm leading-relaxed opacity-60">Contributed to corporate audit systems, software
+            documentation, and client feature sprints.</p>
+        </article>
+      </div>
+    </section>
 
-                            <div class="p-5 bg-white rounded-lg border border-gray-200 shadow-sm">
-                                <div class="flex justify-between items-start">
-                                    <div>
-                                        <h4 class="font-semibold text-gray-900 text-base md:text-lg">Efwan Chapter Indonesia</h4>
-                                        <p class="text-xs md:text-sm font-medium text-gray-500">Event Crew & IT Support</p>
-                                    </div>
-                                    <span class="text-xs font-semibold px-2.5 py-1 bg-gray-100 text-gray-700 rounded">Jan 2026 – Present</span>
-                                </div>
-                                <p class="text-xs md:text-sm text-gray-600 mt-2">Managing live event ticketing applications and providing direct technical assistance during community gatherings.</p>
-                            </div>
+    <section class="grid border-b hairline md:grid-cols-5">
+      <div class="border-r hairline px-6 py-8 md:px-8">
+        <p class="mono text-xs">06 / LEADERSHIP</p>
+      </div>
+      <div class="col-span-4 grid md:grid-cols-2">
+        <article class="border-b hairline px-6 py-7 md:border-b-0 md:border-r md:px-8">
+          <h3 class="mb-2 text-xl font-medium">Workshop Riset Informatika</h3>
+          <p class="mb-3 text-sm opacity-60">Head of Backend Division · Sep 2025 — Present</p>
+          <p class="text-sm leading-relaxed opacity-60">Directing curriculum, coordinating mentors, and structuring
+            backend development learning programs.</p>
+        </article>
+        <article class="border-b hairline px-6 py-7 md:border-b-0 md:px-8">
+          <h3 class="mb-2 text-xl font-medium">Technically Ramadhan</h3>
+          <p class="mb-3 text-sm opacity-60">Event Lead · February 2026</p>
+          <p class="text-sm leading-relaxed opacity-60">Led end-to-end execution, cross-divisional committee management,
+            and post-event evaluation.</p>
+        </article>
+        <article class="border-t hairline px-6 py-7 md:border-r md:px-8">
+          <h3 class="mb-2 text-xl font-medium">Open Recruitment & Beta Class</h3>
+          <p class="mb-3 text-sm opacity-60">Coordinator & Programming Mentor · 2025</p>
+          <p class="text-sm leading-relaxed opacity-60">Taught programming fundamentals and coordinated selection
+            logistics for incoming members.</p>
+        </article>
+        <article class="border-t hairline px-6 py-7 md:px-8">
+          <h3 class="mb-2 text-xl font-medium">Efwan Chapter & Bantengbalap.id</h3>
+          <p class="mb-3 text-sm opacity-60">IT Support · Content Creator · 2026</p>
+          <p class="text-sm leading-relaxed opacity-60">Supported live event systems and created motorsport graphics,
+            reels, and structured content calendars.</p>
+        </article>
+      </div>
+    </section>
 
-                            <div class="p-5 bg-white rounded-lg border border-gray-200 shadow-sm">
-                                <div class="flex justify-between items-start">
-                                    <div>
-                                        <h4 class="font-semibold text-gray-900 text-base md:text-lg">Bantengbalap.id</h4>
-                                        <p class="text-xs md:text-sm font-medium text-gray-500">Social Media Specialist & Content Creator</p>
-                                    </div>
-                                    <span class="text-xs font-semibold px-2.5 py-1 bg-gray-100 text-gray-700 rounded">Mar 2026 – Present</span>
-                                </div>
-                                <p class="text-xs md:text-sm text-gray-600 mt-2">Curating high-engagement motorsport graphics, reels, and feeds with structured content calendars.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section class="grid border-b hairline md:grid-cols-5">
+      <div class="border-r hairline px-6 py-8 md:px-8">
+        <p class="mono text-xs">07 / TOOLKIT</p>
+      </div>
+      <div class="col-span-4 grid sm:grid-cols-2 lg:grid-cols-4">
+        <article class="border-b hairline px-6 py-8 sm:border-r lg:border-b-0 md:px-8">
+          <h3 class="mb-5 text-lg font-semibold">Backend & APIs</h3>
+          <p class="text-sm leading-8 opacity-60">Laravel & PHP<br>Next.js & Node.js<br>Python & Go<br>RESTful
+            APIs<br>WebSockets<br>Queue Jobs & Cron</p>
+        </article>
+        <article class="border-b hairline px-6 py-8 lg:border-b-0 lg:border-r md:px-8">
+          <h3 class="mb-5 text-lg font-semibold">Mobile & Frontend</h3>
+          <p class="text-sm leading-8 opacity-60">Flutter & Dart<br>Android Studio<br>React & Astro.js<br>Tailwind &
+            Bootstrap<br>Svelte & Vue basics<br>Responsive design</p>
+        </article>
+        <article class="border-b hairline px-6 py-8 sm:border-r lg:border-b-0 md:px-8">
+          <h3 class="mb-5 text-lg font-semibold">Database & Tools</h3>
+          <p class="text-sm leading-8 opacity-60">MySQL & PostgreSQL<br>Firebase Auth & Firestore<br>Docker<br>Git &
+            GitHub<br>Postman<br>DOKU Payments</p>
+        </article>
+        <article class="px-6 py-8 md:px-8">
+          <h3 class="mb-5 text-lg font-semibold">Workflow & Design</h3>
+          <p class="text-sm leading-8 opacity-60">Agile project management<br>Figma UI/UX<br>Obsidian &
+            Notion<br>Technical documentation<br>Public speaking<br>Indonesian & English</p>
+        </article>
+      </div>
+    </section>
 
-        <!-- SKILLS & TECHNOLOGIES -->
-        <section class="py-12 md:py-20 bg-gray-50 border-t border-b border-gray-200">
-            <div class="container max-w-screen-xl mx-auto px-4 sm:px-6">
-                <div class="text-center max-w-3xl mx-auto mb-14">
-                    <h2 class="font-bold text-gray-800 text-3xl md:text-4xl mb-4">Skills & Technical Stack</h2>
-                    <p class="font-normal text-gray-500 text-sm md:text-base">
-                        A versatile toolkit acquired through rigorous vocational training, university curriculum, and real-world production projects.
-                    </p>
-                </div>
+    <section id="contact" class="hero-wash contact-height relative grid border-b hairline md:grid-cols-5">
+      <div class="border-r hairline px-6 py-8 md:px-8">
+        <p class="mono text-xs">08 / CONTACT</p>
+      </div>
+      <div class="relative col-span-4 flex flex-col justify-between px-6 py-12 md:px-8 md:py-16">
+        <h2 class="contact-title max-w-5xl font-medium leading-none">Let’s make<br>something useful.</h2>
+        <div class="flex flex-col justify-between gap-8 md:flex-row md:items-end">
+          <div>
+            <p class="mb-2 text-sm opacity-60">Available for internships, freelance projects, and collaborations.</p><a
+              class="text-lg underline underline-offset-4" href="mailto:faforite36@gmail.com">faforite36@gmail.com</a>
+          </div>
+          <div class="flex gap-5 text-sm"><a href="https://github.com/ItsNovaaa" target="_blank"
+              rel="noopener noreferrer" class="hover:underline">GitHub ↗</a><a href="https://wa.me/6281915862210"
+              target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp ↗</a><a
+              href="assets/CV_Naufal_Ramadhan.pdf" download class="hover:underline">CV ↓</a></div>
+        </div>
+        <div class="oval absolute bottom-16 right-12 h-20 w-32 bg-white/50 md:h-28 md:w-48"></div>
+      </div>
+    </section>
+    <footer class="flex flex-col justify-between gap-3 px-6 py-5 text-xs uppercase tracking-widest md:flex-row md:px-8">
+      <span>Nova</span><span class="mono">© 2026 — Built with Tailwind CSS</span>
+    </footer>
+  </main>
+  <script>
+    const button = document.getElementById('menu-button');
+    const panel = document.getElementById('menu-panel');
+    button.addEventListener('click', () => { const open = panel.classList.toggle('is-open'); button.setAttribute('aria-expanded', open); });
+  </script>
+</body>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                        <div class="text-gray-800 mb-3"><i data-feather="server" class="w-6 h-6"></i></div>
-                        <h4 class="font-bold text-gray-800 text-base mb-3">Backend & APIs</h4>
-                        <ul class="text-xs md:text-sm text-gray-600 space-y-1.5">
-                            <li>• Laravel & PHP</li>
-                            <li>• Next.js & Node.js</li>
-                            <li>• Python & Go</li>
-                            <li>• RESTful API Architecture</li>
-                            <li>• Laravel Reverb (WebSocket)</li>
-                            <li>• Queue Jobs & Cron Tasks</li>
-                        </ul>
-                    </div>
 
-                    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                        <div class="text-gray-800 mb-3"><i data-feather="smartphone" class="w-6 h-6"></i></div>
-                        <h4 class="font-bold text-gray-800 text-base mb-3">Mobile & Frontend</h4>
-                        <ul class="text-xs md:text-sm text-gray-600 space-y-1.5">
-                            <li>• Flutter & Dart</li>
-                            <li>• Android Studio</li>
-                            <li>• React & Astro.js</li>
-                            <li>• Tailwind CSS & Bootstrap</li>
-                            <li>• Svelte & Vue.js basics</li>
-                            <li>• Responsive Web Design</li>
-                        </ul>
-                    </div>
-
-                    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                        <div class="text-gray-800 mb-3"><i data-feather="database" class="w-6 h-6"></i></div>
-                        <h4 class="font-bold text-gray-800 text-base mb-3">Database & Tools</h4>
-                        <ul class="text-xs md:text-sm text-gray-600 space-y-1.5">
-                            <li>• MySQL & PostgreSQL</li>
-                            <li>• Firebase Auth & Firestore</li>
-                            <li>• Docker Containers</li>
-                            <li>• Git & GitHub Version Control</li>
-                            <li>• Postman API Testing</li>
-                            <li>• DOKU Payment Gateway</li>
-                        </ul>
-                    </div>
-
-                    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                        <div class="text-gray-800 mb-3"><i data-feather="check-circle" class="w-6 h-6"></i></div>
-                        <h4 class="font-bold text-gray-800 text-base mb-3">Workflow & Design</h4>
-                        <ul class="text-xs md:text-sm text-gray-600 space-y-1.5">
-                            <li>• Project Management & Agile</li>
-                            <li>• Figma UI/UX Prototyping</li>
-                            <li>• Obsidian & Notion</li>
-                            <li>• Technical Documentation</li>
-                            <li>• Public Speaking & Mentoring</li>
-                            <li>• Bilingual (ID & EN)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FOOTER & CONTACT -->
-        <footer class="py-16 md:py-24">
-            <div class="container max-w-screen-xl mx-auto px-4 sm:px-6">
-                <div class="text-center max-w-2xl mx-auto">
-                    <h2 class="font-bold text-gray-900 text-3xl md:text-5xl mb-4">Let's Connect</h2>
-                    <p class="font-normal text-gray-500 text-sm md:text-base mb-8 leading-relaxed">
-                        I am actively open to internships, full-time positions, and freelance software engineering projects. Feel free to reach out to discuss collaboration!
-                    </p>
-
-                    <div class="flex flex-wrap items-center justify-center gap-4 mb-12">
-                        <a href="mailto:naufalwahyudiansyah7@gmail.com" class="px-6 py-3 bg-gray-800 text-white rounded-md text-sm md:text-base font-medium hover:bg-gray-700 transition flex items-center space-x-2">
-                            <i data-feather="mail" class="w-4 h-4"></i>
-                            <span>naufalwahyudiansyah7@gmail.com</span>
-                        </a>
-
-                        <a href="https://wa.me/6281915862210" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-white border border-gray-300 text-gray-800 rounded-md text-sm md:text-base font-medium hover:bg-gray-50 transition flex items-center space-x-2">
-                            <i data-feather="phone" class="w-4 h-4 text-green-600"></i>
-                            <span>+62 819-1586-2210</span>
-                        </a>
-                    </div>
-
-                    <div class="flex items-center justify-center space-x-4 mb-8">
-                        <a href="https://github.com/ItsNovaaa" target="_blank" rel="noopener noreferrer" class="w-12 h-12 flex items-center justify-center rounded-full bg-white border border-gray-200 text-gray-700 hover:bg-gray-800 hover:text-white transition ease-in-out duration-300 shadow-sm" title="GitHub">
-                            <i data-feather="github" class="w-5 h-5"></i>
-                        </a>
-
-                        <a href="https://instagram.com/its.novari" target="_blank" rel="noopener noreferrer" class="w-12 h-12 flex items-center justify-center rounded-full bg-white border border-gray-200 text-gray-700 hover:bg-pink-600 hover:text-white transition ease-in-out duration-300 shadow-sm" title="Instagram">
-                            <i data-feather="instagram" class="w-5 h-5"></i>
-                        </a>
-
-                        <a href="mailto:naufalwahyudiansyah7@gmail.com" class="w-12 h-12 flex items-center justify-center rounded-full bg-white border border-gray-200 text-gray-700 hover:bg-blue-600 hover:text-white transition ease-in-out duration-300 shadow-sm" title="Email">
-                            <i data-feather="at-sign" class="w-5 h-5"></i>
-                        </a>
-
-                        <a href="assets/CV_Naufal_Ramadhan.pdf" download="CV_Naufal_Ramadhan.pdf" class="w-12 h-12 flex items-center justify-center rounded-full bg-white border border-gray-200 text-gray-700 hover:bg-gray-800 hover:text-white transition ease-in-out duration-300 shadow-sm" title="Download CV">
-                            <i data-feather="file-text" class="w-5 h-5"></i>
-                        </a>
-                    </div>
-
-                    <p class="text-xs text-gray-400">
-                        © 2026 Naufal Ramadhan Wahyudiansyah. Crafted with Tailwind CSS & Feather Icons.
-                    </p>
-                </div>
-            </div>
-        </footer>
-
-        <script>
-            feather.replace();
-        </script>
-    </body>
 </html>
